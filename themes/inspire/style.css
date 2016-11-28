@@ -1,0 +1,257 @@
+/*
+    Copyright 2009-2013 Edward L. Platt <ed@elplatt.com>
+    
+    This file is part of the Seltzer CRM Project
+    style.css - Styling for CRM front end
+
+    Seltzer is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    any later version.
+
+    Seltzer is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Seltzer.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* Site-wide tag styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #111111;
+    font-family: sans-serif;
+    font-size: 0.875em;
+    overflow-y: scroll;
+}
+
+h1 {
+    margin: 1em 0 0 0;
+    font-size: 1.33em; /* 12->16pt */
+}
+
+fieldset {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    border: solid 1px #0099cb;
+}
+
+fieldset.form-row {
+    display: block;
+    margin: 0.5em 0;
+    padding: 0;
+    border: none;
+}
+
+label {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-weight: bold;
+    color: #0099cb;
+}
+a:focus {
+    outline: none;
+}
+
+p {
+    margin: 1em 0.5em;
+}
+
+/* Site-wide class styles */
+
+.hidden {
+    display: none;
+}
+
+/* General table styles */
+
+table.seltzer-table {
+    border-collapse: collapse;
+    margin: 0.5em;
+}
+table.seltzer-table th {
+    background: #0099cb;
+    color: white;
+}
+table.seltzer-table td, table.seltzer-table th {
+    border-left: solid 1px #0099cb;
+    border-right: solid 1px #0099cb;
+    border-spacing: 0;
+    padding: 0.2em 0.5em;
+    text-align: left;
+}
+table.seltzer-table tr.subhead td {
+    background: #99dce6;
+    background: #7bcfeb;
+    border-bottom: none;
+    color: white;
+    font-weight: normal;
+    border-top: solid 1px #0099cb;
+}
+table.seltzer-table tr.subhead td a {
+    color: white;
+    font-weight: normal;
+}
+table.seltzer-table tr.even td, table.seltzer-table tr.even th {
+    background-color: #eeeeff;
+}
+table.seltzer-table tr:last-child td {
+    border-bottom: solid 1px #0099cb;
+}
+table.seltzer-table tr:first-child td {
+    border-top: solid 1px #0099cb;
+}
+
+/* Big Table Styles */
+
+table.bigtable {
+    border-collapse: collapse;
+    margin: 0.5em;
+}
+table.bigtable th {
+    background: #0099cb;
+    color: white;
+}
+table.bigtable td, table.bigtable th {
+    border-left: solid 1px #0099cb;
+    border-right: solid 1px #0099cb;
+    border-spacing: 0;
+    padding: 0.2em 0.5em;
+    text-align: left;
+}
+table.bigtable tr.subhead td {
+    background: #99dce6;
+    background: #7bcfeb;
+    border-bottom: none;
+    color: white;
+    font-weight: normal;
+    border-top: solid 1px #0099cb;
+}
+table.bigtable tr.subhead td a {
+    color: white;
+    font-weight: normal;
+}
+table.bigtable tr:last-child td {
+    border-bottom: solid 1px #0099cb;
+}
+table.bigtable tr:first-child td {
+    border-top: solid 1px #0099cb;
+}
+
+/* Report styles */
+
+/* Datepicker styles */
+
+.ui-datepicker {
+    background-color: #eeeeee;
+}
+
+/* General form styles */
+
+.form-row-checkbox input {
+    float: left;
+    margin-right: 0.5em;
+}
+
+.form-row-checkbox label {
+    float: left;
+}
+
+/* Layout */
+
+.container {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header ul.nav {
+    display: block;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-top: solid 2px #0099cb;
+    border-bottom: solid 2px #0099cb;
+}
+
+.header ul.nav li {
+    display: block;
+    float: left;
+    padding: 4px 2px;
+}
+
+.header ul.nav li a {
+    display: block;
+    float: left;
+    height: 1.5em;
+    padding: 0.5em 0.5em 0 0.5em;
+    text-decoration: none;
+    color: #0099cb;
+    font-weight: bold;
+}
+.header ul.nav li a:hover {
+    background: #eeeeff;
+}
+
+.login-status {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+}
+
+ul.page-nav {
+    display: block;
+    overflow: hidden;
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+ul.page-nav li {
+    display: block;
+    float: left;
+}
+ul.page-nav li a {
+    display: block;
+    float: left;
+    height: 1.5em;
+    margin: 0 0.5em 0 0;
+    padding: 0.5em 0.5em 0 0.5em;
+    text-decoration: none;
+    color: #0099cb;
+    font-weight: bold;
+}
+ul.page-nav li a:hover {
+    background: #eeeeff;
+}
+ul.page-nav li a.active {
+    background: #eeeeff;
+}
+
+fieldset.tab {
+    border: none;
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+fieldset.tab > legend {
+    display: none;
+}
+
+.footer {
+    border-top: solid 2px #0099cb;
+    padding: 1em 0 0.5em 0;
+    color: #999999;
+    text-align: center;
+}
+.footer a {
+    color: #999999;
+}
