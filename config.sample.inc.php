@@ -22,9 +22,9 @@
 
 // Database configuration
 $config_db_host = 'localhost';
-$config_db_user = '';
-$config_db_password = '';
-$config_db_db = '';
+$config_db_user = 'seltzer';
+$config_db_password = 'fizzyH2O';
+$config_db_db = 'seltzer';
 
 // Site info
 
@@ -32,19 +32,20 @@ $config_db_db = '';
 $config_site_title = 'Seltzer CRM';
 
 // The name of the organization to insert into templates
-$config_org_name = 'Seltzer CRM';
+$config_org_name = 'Tech Valley Center of Gravity';
 
 // The currency code for dealing with payments, can be GBP, USD, or EUR 
 $config_currency_code = 'USD';
 
 // The From: address to use when sending email to members
-$config_email_from = '';
+$config_email_from = 'Treasurer@TechValleyCenterofGravity.com';
 
 // The email address to notify when a user is created
-$config_email_to = '';
+$config_email_to = 'Treasurer@TechValleyCenterofGravity.com';
 
 // The hostname of the server
-$config_host = $_SERVER['SERVER_NAME'];
+//$config_host = $_SERVER['ssl.techvalleycenterofgravity.com'];
+$config_host = 'ssl.techvalleycenterofgravity.com';
 
 // The url path of the crm directory
 $config_base_path = '/crm/';
@@ -88,14 +89,14 @@ $config_modules[] = "payment";
 // Automated billing
 //$config_modules[] = "billing";
 
-// Assign a profile picture using gravatar 
+// Assign a profile picture using gravatar
 $config_modules[] = "profile_picture";
 
-// Assign members a mentor 
+// Assign members a mentor
 //$config_modules[] = "mentor";
 
 // Track Member Training
-$config_modules[] = "training";
+//$config_modules[] = "training";
 
 // Track Tool Inventory
 $config_modules[] = "tool";
@@ -114,20 +115,20 @@ $config_modules[] = "day_pass";
 
 // Links to show in the main menu
 $config_links = array(
-    '<front>' => 'Home'
-    , 'members' => 'Members'
-    , 'plans' => 'Plans'
-    , 'keys' => 'Keys'
-    , 'trainings' => 'Training'
-    , 'tools' => 'Tools'
-    , 'discounts' => 'Discounts'
-    //, 'foobars' => 'Foobars'
-    //, 'day_passes' => 'Day Passes'
-    //, 'user_metas' => 'User Meta Data'
-    //, 'plan_metas' => 'Plan Meta Data'
-    , 'payments' => 'Payments'
-    //, 'accounts' => 'Accounts'
-    //, 'reports' => 'Reports'
-    , 'permissions' => 'Permissions'
-    , 'upgrade' => 'Upgrade'
+   '<front>' => 'Home'
+   , 'members' => 'Members'
+   , 'plans' => 'Plans'
+   , 'keys' => 'Keys'
+   //, 'trainings' => 'Training'
+   , 'tools' => 'Tools'
+   , 'discounts' => 'Discounts'
+   //, 'foobars' => 'Foobars'
+   //, 'day_passes' => 'Day Passes'
+   //, 'user_metas' => 'User Meta Data'
+   //, 'plan_metas' => 'Plan Meta Data'
+   , 'payments' => 'Payments'
+   //, 'accounts' => 'Accounts'
+   //, 'reports' => 'Reports'
+   , 'permissions' => 'Permissions'
+   , 'upgrade' => 'Upgrade'
 );
