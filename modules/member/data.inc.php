@@ -31,7 +31,8 @@ function get_member_number () {
     $sql = "
         SELECT `memberNumber`
         FROM `contact`
-        ORDER BY `memberNumber` ASC ";
+	WHERE memberNumber IS NOT NULL
+        ORDER BY CAST(`memberNumber` as UNSIGNED) ASC ";
 
     $res = mysql_query($sql);
     if (!$res) crm_error(mysql_error());
@@ -60,7 +61,7 @@ function get_member_number () {
     $lastNumber = $memberNumbers[$i];
     $nextNumber = $memberNumbers[$i + 1];
 
-    while ($lastNumber + 1 == $nextNumber){
+    while ($lastNumber + 1 >= $nextNumber){
         // print "<p> Last Number = " . $lastNumber;
         // print "<p> Next Number = " . $nextNumber;
         $i++;
